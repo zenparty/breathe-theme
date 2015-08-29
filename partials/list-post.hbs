@@ -1,4 +1,5 @@
-{{!< default}}
-
-    <h1><a href="{{url}}" class="permalink">{{title}}</a></h1>
-
+{{#foreach posts}}
+<section id="{{id}}" class="{{post_class}}">
+	<h3 class="post-title"><a href="{{url}}">{{title}}</a><span class="separator"> &middot; </span>{{date published_at format='MMMM D, YYYY'}}</h3>
+</section>
+{{/foreach}}
