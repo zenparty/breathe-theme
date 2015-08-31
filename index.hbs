@@ -1,19 +1,12 @@
 {{!< default}}
 
-<article class="{{post_class}}">
-  <header class="post-header">
-    
-    <h1><a href="{{url}}" class="permalink">{{title}}</a></h1>
-    
-  </header>
+{{#foreach posts}}
 
-  <div class="post-content">
-  	
-  	<p>
-	  	Test
-  	</p>
-  	
-  	
-  </div>
+	{{#if}}
+		
+		{{#has tag="update"}}
 
-</article>
+			{{> list-post}}
+				{{/foreach}}
+		{{/has}}		
+	{{/if}}	
