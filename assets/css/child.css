@@ -1,6 +1,6 @@
 <style> 
     
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 890px) {
     body {
         margin: 10px;
     }
@@ -10,11 +10,11 @@
     .main-header h1 + * {
       display: none;
     }
+    
+    .post-header h1 {
+        font-size: 1.9em;
+        line-height: 0.9em;
+        margin-bottom: 0.25em;
+        }
 }
-    @media screen and (max-width: 880px) {
-    body {
-        margin: 10px;
-    }
-}
-
 </style>
